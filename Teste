@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Gabriel - Materiais Escolares</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: #222;
+            border: 1px solid #444;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+        }
+        .product h3 {
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #111;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luiz Gabriel</h1>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="produtos">
+            <h2>Materiais Escolares</h2>
+            <div class="products">
+                <div class="product">
+                    <h3>Caderno</h3>
+                    <p>R$ 10,00</p>
+                </div>
+                <div class="product">
+                    <h3>Lápis</h3>
+                    <p>R$ 2,00</p>
+                </div>
+                <div class="product">
+                    <h3>Borracha</h3>
+                    <p>R$ 1,50</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: contato@luizgabriel.com</p>
+            <p>Telefone: (11) 99999-9999</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Luiz Gabriel - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
