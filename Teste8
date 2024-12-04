@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramenta de Estudo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .card input, .card button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .card button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ferramenta de Estudo</h1>
+    <div class="card">
+        <label for="question">Digite a pergunta:</label>
+        <input type="text" id="question" placeholder="Ex: Qual é a capital do Brasil?">
+
+        <label for="answer">Digite a resposta:</label>
+        <input type="text" id="answer" placeholder="Ex: Brasília">
+
+        <button onclick="checkAnswer()">Testar</button>
+
+        <p class="result" id="result"></p>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const question = document.getElementById('question').value;
+            const correctAnswer = document.getElementById('answer').value.trim().toLowerCase();
+            const userAnswer = prompt(question).trim().toLowerCase();
+
+            const resultElement = document.getElementById('result');
+
+            if (userAnswer === correctAnswer) {
+                resultElement.textContent = "Parabéns! Você acertou!";
+                resultElement.style.color = "green";
+            } else {
+                resultElement.textContent = `Resposta errada! A resposta correta é: ${correctAnswer}`;
+                resultElement.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramenta de Estudo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .card input, .card button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .card button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ferramenta de Estudo</h1>
+    <div class="card">
+        <label for="question">Digite a pergunta:</label>
+        <input type="text" id="question" placeholder="Ex: Qual é a capital do Brasil?">
+
+        <label for="answer">Digite a resposta:</label>
+        <input type="text" id="answer" placeholder="Ex: Brasília">
+
+        <button onclick="checkAnswer()">Testar</button>
+
+        <p class="result" id="result"></p>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const question = document.getElementById('question').value;
+            const correctAnswer = document.getElementById('answer').value.trim().toLowerCase();
+            const userAnswer = prompt(question).trim().toLowerCase();
+
+            const resultElement = document.getElementById('result');
+
+            if (userAnswer === correctAnswer) {
+                resultElement.textContent = "Parabéns! Você acertou!";
+                resultElement.style.color = "green";
+            } else {
+                resultElement.textContent = `Resposta errada! A resposta correta é: ${correctAnswer}`;
+                resultElement.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
